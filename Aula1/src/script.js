@@ -23,3 +23,4 @@ console.log(times[4]) //undefined, pq não existe
 console.log(times.length) //esta contando quantos itens tem na lista
 
 console.log(times[times.length - 1]) //esta contando quantos itens tem na lista, mas subtraindo 1, para mostrar o último item da lista, que é o Grêmio.
+
