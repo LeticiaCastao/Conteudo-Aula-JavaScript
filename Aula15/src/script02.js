@@ -1,28 +1,41 @@
-// Utilizando o getElementById()
-const elemento1 = document.getElementById("selecionandoElemento"); 
+// Continuação dos métodos de interação de Arrays
 
-console.log(elemento1);
+// Utilizando o método entries()
+const elemento = document.querySelector(".ex1");
 
-// Utilizando o getElementsByTagName()
-const elemento2 = document.getElementsByTagName("h1");
+const frutas = ["Banana", "Melão", "Abacate", "Laranja", "Uva"];
+const f = frutas.entries();
 
-console.log(elemento2[0]);
+for (let item of f) {
+  elemento.innerHTML += `${item} <br>`;
+}
 
-// Utilizando o getElementsByClassName()
-const elemento3 = document.getElementsByClassName("selecionandoElementoPorClasse");
- 
-console.log(elemento3[0]);
+console.log(f);
 
-// Utilizando o querySelector()
-const elemento4 = document.querySelector(".elementoClasse");
+// Ultilizando o método with()
+const elemento2 = document.querySelector(".ex2");
 
-console.log(elemento4);
+const meses = ["Jan", "Fev", "Mar", "Abr", "Mai",];
+const m = meses.with(3, "Abril");
 
-const elemento5 = document.querySelector("#elementoID")
+elemento2.innerHTML = m;
 
-console.log(elemento5);
+// Utilizando o Spread Operador
+const elemento3 = document.querySelector(".ex3");
 
-// Utilizando o querySelectoAll()
-const elementos = document.querySelectorAll("h3");
+const numerosLista1 = [1, 2, 3];
+const numerosLista2 = [4, 5, 6];
 
-console.log(elementos[0]);
+const numerosListaGeral = [...numerosLista1, ...numerosLista2];
+
+console.log(numerosListaGeral);
+
+// Utilizando o Rest Operator
+const elemento4 = document.querySelector(".ex4");
+
+let item0, rest;
+
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+[item0, ...rest] = numeros;
+
+elemento4.innerHTML = rest;
