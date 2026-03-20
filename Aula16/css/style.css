@@ -1,4 +1,18 @@
 body {
     font-family: sans-serif;
-    background-color: #e68ea1;
+    background-color: #df6071c0;
+}
+
+#container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background-color: rgb(192, 63, 63);
+}
+
+#animacao {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: rgb(93, 218, 145);
 }
